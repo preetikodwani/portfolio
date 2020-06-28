@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>online library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+<!--#example1 {
+  background-image: url("img_flwr.png"), url("paper.jpg");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  margin-left: 60px;
+  padding: 5px;
+  
+}-->
+body{
+  background-image: url("bok.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+h1{
+  text-shadow: 2px 2px 5px red;
+  margin-top: 70px;
+}
+h2{
+margin-left: 60px;
+padding: 10px;
+font-size: 170%;
+
+}
+.bod{	
+  background-color: LightGray;
+  color: black;
+  margin-left:60px;
+  margin-right:650px;
+  padding:10px;
+  
+}
+section{
+  float: right;
+  padding-right: 60px;
+}
+.nav{
+  overflow: hidden;
+  background-color: PapayaWhip;
+  color: black;
+  
+  margin-left:60px;
+  margin-right:635px;
+  top: 0;
+  font-size: 200%;
+  
+}
+.nav a{
+  position: fixed;
+  float: left;
+  padding: 14px 16px;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+.dropdown{
+  float: left;
+  overflow: hidden
+}
+.dropdown.dropbtn{
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px ;
+  background-color: inherit;
+  font-family: inherit;
+  margin-left: 150px;
+}
+.nav a:hover, .dropdown:hover .dropbtn{
+  background-color: green;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px ;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#navi{
+  background-color: PapayaWhip;
+  color: black;
+  position: fixed;
+  margin-left: 635px;
+  margin-right: 60px;
+  margin-top: 100px;
+  font-size: 190%;
+  padding: 10px;
+  top: 0;
+}
+div.gallery {
+  margin-left: 60px;
+  
+  border: 1px solid #ccc;
+  float: left;
+  width: 120px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100px;
+  height: 200px;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="nav">
+  	<a href="index.html">HOME</a>
+	<a href="req.html">REQUEST</a>
+  	<a href="aboutus.html">ABOUT US</a>
+	<div class="dropdown">
+    		<button class="dropbtn">GENRE</button>
+    		<div class="dropdown-content">
+      			<a href="#">SELF LEARN</a>
+      			<a href="#">THRILLER</a>
+     			<a href="#">RELIGIOUS</a>
+			<a href="#">ROMANCE</a>
+			<a href="#">KIDS</a>
+			<a href="#">COMICS</a>
+		</div>
+    	</div>
+</div> 
+<div id = navi>
+search: <input type= "text" name="txtUser" maxlength="30" />
+</div>
+<h1 class = "bod"><b>ONLINE LIBRARY</b></h1>
+ <section>
+      <a href="admin.html">ADMIN</a><br><br>
+      <a href="login.html">LOGIN</a>	|
+      <a href="sign.html">SIGN-UP</a>
+  </section>
+
+<h2>FEATURED BOOKS</h2>
+<div class="gallery">
+  <a href="#">
+    <img src="img1.jpeg" alt="Cinque Terre" >
+</a>
+  <div class="desc">Add a button</div>
+</div>
+
+<div class="gallery">
+  <a href="#">
+    <img src="img2.jpeg" alt="Forest" />
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+
+<div class="gallery">
+  <a href="#">
+    <img src="img3.jpeg" alt="Northern Lights" />
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img4.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#a">
+    <img src="img5.jpeg" alt="Mountains"/>
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img6.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img7.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img8.jpeg" alt="Mountains"/>
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img9.jpeg" alt="Mountains"/>
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img10.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img11.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img12.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img13.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc">Add a button</div>
+</div>
+
+
+
+  
+</body>
+</html>
+

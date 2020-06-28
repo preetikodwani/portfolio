@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>online library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+	function validatesub()
+	{
+		var ser = document.forms["myForm"]["search"].value;
+      		if(ser.length > 3){alert("THIS SHALL BE INCLUDED SOON");}
+	}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="Stylesheet" href="style.css">
+
+<style>
+h1{
+  text-shadow: 2px 2px 5px red;
+  margin-top: 100px;
+}
+h2{
+margin-left: 60px;
+padding: 10px;
+font-size: 170%;
+}
+.bod{	
+  background-color: #f9f9f9;
+  color: black;
+  margin-left:60px;
+  margin-right:60px;
+  padding:10px;
+  
+}
+section{
+  float: right;
+  padding-right: 60px;
+}
+#navi{
+  margin-left: 50px;
+  padding-right: 10px;
+  top: 0;
+  float:right;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head><body>
+<div class ="wrapper">
+<header>
+<i class="fa fa-bars menu-toggle"></i>
+  <div class="nav">
+	<ul>
+  	<li><a href="index.html">HOME</a></li>
+	<li><a href="req.html">REQUEST</a></li>
+  	<li><a href="aboutus.html">ABOUT US</a></li>
+	<li><a href="#">
+		GENRE
+		<i class="fa fa-chevron-down"></i>
+		</a>
+    		<!--<div class="dropdown-content">-->
+			<ul>
+      			<li><a href="self.html">SELF HELP</a></li>
+      			<li><a href="thrill.html">THRILLER</a></li>
+     			<li><a href="religious.html">RELIGIOUS</a></li>
+			<li><a href="romance.html">ROMANCE</a></li>
+			<li><a href="kids.html">KIDS</a></li>
+			<li><a href="novel.html">NOVEL</a></li>
+			<li><a href="auto.html">AUTOBIOGRAPHY</a></li>
+			</ul>
+    	</li>
+ </ul>
+<div class="search-container">
+    <form name="myForm" action="#" onsubmit="validatesub()" method="POST">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" value="SEARCH">
+    </form></div>
+</div>
+</header>
+
+<h1 class = "bod"><b>ONLINE LIBRARY</b></h1>
+<h2>THRILLER</h2>
+<div class="gallery">
+  <a href="#">
+    <img src="1.png" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='the-girl.pdf'" value="READ"/>
+  </div>
+</div>
+
+<div class="gallery">
+  <a href="#">
+    <img src="2.png" alt="GONE GIRL" />
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='Gone-Girl.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="img20.jpeg" alt="THE MURDER AT VICARAGE" />
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The Murder at the Vicarage.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img22.jpeg" alt="The ABC Murderers" />
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The ABC Murders.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#a">
+    <img src="img33.jpeg" alt="THE MYSTERIOUS AFFAIRS AT STYLE"/>
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The_Mysterious_Affair_At_Styles.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img21.jpeg" alt="THE DA VINCI CODE" />
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The_Da_Vinci_Code.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img41.jpg" alt="Mountains" />
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='Seawitch.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img40.jpg" alt="Mountains"/>
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='Murder in Mesopotomia.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img39.jpg" alt="Mountains"/>
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='At Bertrum_s_Hotel.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img38.jpg" alt="Mountains" />
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='Appointment_with_death.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img37.jpg" alt="Mountains" />
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='After the Funeral.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img36.jpg" alt="Mountains" />
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='A_Caribbean_Mystery.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img42.jpg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='Partners in Crime.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img45.jpg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='Lord Edgware Dies.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img44.jpg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='Lord Edgware Dies.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img71.jpg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='And_Then_There_Were_None.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img17.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img18.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img19.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src ="scripts.js"></script>
+
+  
+</div>
+
+<footer>
+<div class ="wrapper">kodwanipreet@gmail.com</div>
+
+</footer>
+</body>
+</html>
+
+

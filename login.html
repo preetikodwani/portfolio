@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN</title>
+<script>
+	function validatesub()
+	{
+		var ser = document.forms["myForm"]["search"].value;
+      		if(ser.length > 3){alert("THIS SHALL BE INCLUDED SOON");}
+	}
+    function validateForm() {
+      
+      var pw = document.forms["myForm"]["password"].value;
+      var eid = document.forms["myForm"]["email"].value;
+      var atpos = eid.indexOf("@");
+      var dotpos = eid.indexOf(".");
+      if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= eid.length) { alert("Please Enter a Valid E-mail Address"); }
+      if(pw.length < 6 && pw.length > 21){ alert("password should be more than 6 characters "); }
+     }
+  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="Stylesheet" href="air.css">
+<style>
+
+input[type=text]:focus {
+  border: 2px solid #555;
+}
+input[type=password]:focus {
+  border: 2px solid #555;
+}
+h1{
+  text-shadow: 2px 2px 5px red;
+  margin-top: 100px;
+}
+h2{
+margin-left: 60px;
+padding: 10px;
+font-size: 170%;
+}
+.bod{	
+  background-color: #f9f9f9;
+  color: black;
+  margin-left:60px;
+  margin-right:60px;
+  padding:10px;
+  
+}
+section{
+  float: right;
+  padding-right: 55px;
+}
+#navi{
+  margin-left: 50px;
+  padding-right: 10px;
+  top: 0;
+  float:right;
+}
+
+
+
+</style>
+</head><body>
+<div class ="wrapper">
+<header>
+<i class="fa fa-bars menu-toggle"></i>
+  <div class="nav">
+	<ul>
+  	<li><a href="index.html">HOME</a></li>
+	<li><a href="req.html">REQUEST</a></li>
+  	<li><a href="aboutus.html">ABOUT US</a></li>
+	<li><a href="#">
+		GENRE
+		<i class="fa fa-chevron-down"></i>
+		</a>
+    		<!--<div class="dropdown-content">-->
+			<ul>
+      			<li><a href="self.html">SELF HELP</a></li>
+      			<li><a href="thrill.html">THRILLER</a></li>
+     			<li><a href="religious.html">RELIGIOUS</a></li>
+			<li><a href="romance.html">ROMANCE</a></li>
+			<li><a href="kids.html">KIDS</a></li>
+			<li><a href="novel.html">NOVEL</a></li>
+			<li><a href="auto.html">AUTOBIOGRAPHY</a></li>
+			</ul>
+    	</li>
+ </ul>
+<div class="search-container">
+    <form name="myForm" action="#" onsubmit="validatesub()" method="POST">
+      <input type="text" placeholder="Search.." name="search">
+      <input type="submit" value="SEARCH">
+    </form></div>
+</div>
+</header>
+<h1 class = "bod"><b>ONLINE LIBRARY</b></h1>
+ <section>
+    <h2>LOGIN</h2>
+      <form name="myForm" action="logg.php" onsubmit="validateForm()" method="POST">
+  E- mail id: <input type="text" name="email" autofocus required><br><br>
+  Password: <input type= "password" name="password" required><br><br> 
+  <input type="submit" value="Submit">
+   
+<p id="demo"></p>
+<a href="sign.html">no account?</a>
+<a href="sign.html">forgot password?</a>
+</form>
+
+  </section>
+<h2>FEATURED BOOKS</h2>
+<div class="gallery">
+  <a href="#">
+    <img src="img53.jpg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='Third Girl.pdf'" value="READ"/>
+  </div>
+</div>
+
+
+<div class="gallery">
+  <a href="#">
+    <img src="img54.jpg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The Secret Adversary.pdf'" value="READ"/>
+  </div>
+</div>
+
+<div class="gallery">
+  <a href="#">
+    <img src="img55.jpg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The Perks of being a Wallflower.pdf'" value="READ"/>
+  </div>
+</div>
+
+
+<div class="gallery">
+  <a href="#">
+    <img src="img16.jpeg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='i too had a luv story.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="img73.jpg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The man in the brown suit.pdf'" value="READ"/>
+  </div>
+</div>
+
+<div class="gallery">
+  <a href="#">
+    <img src="img18.jpeg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='eleanor-and-park.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="img65.jpg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='charlotte.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="nagas.png" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='nagas.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="img47.jpg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='Seriously I_m Kidding.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="meluha.png" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='mel.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="img50.jpg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The Warren Buffett Way.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="vayu.png" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='vayu.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="img62.jpg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='gofhp.pdf'" value="READ"/>
+  </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="#a">
+    <img src="img33.jpeg" alt="THE MYSTERIOUS AFFAIRS AT STYLE"/>
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The_Mysterious_Affair_At_Styles.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a href="#">
+    <img src="img64.jpg" alt="A GIRL ON THE TRAIN" >
+</a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='wimpy.pdf'" value="READ"/>
+  </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img21.jpeg" alt="THE DA VINCI CODE" />
+  </a>
+  <div class="desc"><input type="button" value= "DOWNLOAD" />
+			<input type="button" onclick= "window.location.href='The_Da_Vinci_Code.pdf'" value="READ"/>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img4.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#a">
+    <img src="img5.jpeg" alt="Mountains"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img6.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img7.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img8.jpeg" alt="Mountains"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img9.jpeg" alt="Mountains"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img10.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img11.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img12.jpeg" alt="Mountains" />
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img13.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img14.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img15.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img16.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img17.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img18.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="img19.jpeg" alt="Mountains22"/>
+  </a>
+  <div class="desc"><button type="button">DOWNLOAD</button>
+			<button type="button">READ</button>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src ="scripts.js"></script>
+  
+</div>
+
+
+</body>
+</html>
+

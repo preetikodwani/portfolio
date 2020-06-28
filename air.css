@@ -1,0 +1,343 @@
+
+body{
+background-image: url("bok.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bod{	
+  background-color: #f9f9f9;
+  color: black;
+  margin-left: 12%;
+  margin-right: 12%;
+  padding: 10px;
+  padding-top: 5%;
+}
+header .search-container {
+  float: right;
+}
+
+header input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+header .search-container button:hover {
+  background: green;
+}
+header .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+header{
+	background: #f9f9f9;
+	height: 66px;
+	margin-top: 0px;
+	margin-left: 12%;
+	margin-right: 60px;
+	top: 0px;
+	position: fixed;
+}
+header *{
+  color: black;
+}
+header ul{
+	float: left;
+	margin-top: 0px;	
+	padding: 0px;
+	list-style: none;
+}
+.showing{
+	max-height: 100em;
+}
+header ul li
+{
+	float: left;
+	position: relative;
+}
+header ul li ul{
+	position: absolute;
+	top: 55px;
+	right: 0px;
+	width: 270px;
+	display: none;
+}
+header ul li:hover ul{
+	display: block;
+}
+header ul li ul li{
+	width: 100%;
+	background: white;
+}
+header ul li ul li a{
+	padding: 10px;
+	background: white;
+	text-align: left;
+}
+header ul li a
+{
+  display: block;
+  float: left;
+  padding: 14px 16px;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  width: 100%; 
+}
+header i:hover
+{
+background: green;
+transition: 0.5s;
+
+}
+header ul li a:hover
+{
+background: green;
+transition: 0.5s;
+}
+header ul li ul li a:hover{
+	background: gray;
+}
+header .menu-toggle
+{
+	display: none;
+}
+div.gallery {
+  margin-left: 60px;
+  margin-right: 100px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  float: left;
+  width: 150px;
+  
+  justify-content: centre; 
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 150px;
+  height: 200px;
+}
+
+div.desc {
+  display: inline-block;
+  width: 70px;
+  font-size: 20px; 
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px){
+
+body{
+background-image: url("bok.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+	header{
+ position: relative;
+ margin-left: 18%;
+}
+header ul{
+ width: 100%;
+ background: #f9f9f8;
+ max-height: 0px;
+ overflow: hidden;
+}
+header ul li a{
+ font-size: 12px;
+}
+header ul li{
+ width: 100%;
+}
+header ul li ul{
+ position: static;
+ display: block;
+ width: 100%;
+ background: inherit;
+}
+header ul li ul li a{
+ padding: 8px;
+ padding-left: 50px;
+ font-size: 12px;
+}
+header .menu-toggle{
+ display: block;
+ position: absolute;
+ right: 20px;
+ margin-top: 30px;
+ font-size: 1.9em;
+}
+header .search-container {
+  float: left;
+}
+
+header input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 10px;
+  border: none;
+}
+header .search-container button:hover {
+  background: green;
+}
+header .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-left: 0px;
+  background: #ddd;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+.bod{	
+  background-color: #f9f9f9;
+  color: black;
+  margin-left: 16%;
+  margin-right: 12%;
+  padding: 10px;
+  padding-top: 5%;
+}
+div.gallery {
+  margin-left: 18%;
+  margin-right: 50px;
+  
+  display: inline-block;
+  border: 1px solid #ccc;
+  float: left;
+  width: 30%;
+  
+  justify-content: centre; 
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+}
+ div.desc {
+  display: inline-block;
+  width: 100%;
+  font-size: 15px; 
+  text-align: center;
+}
+	
+}
+@media only screen and (max-width: 400px){
+
+body{
+background-image: url("mob.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header{
+ position: relative;
+ margin-left: 18%;
+}
+header ul{
+ width: 100%;
+ background: #f9f9f8;
+ max-height: 0px;
+ overflow: hidden;
+}
+header ul li a{
+ font-size: 12px;
+}
+header ul li{
+ width: 100%;
+}
+header ul li ul{
+ position: static;
+ display: block;
+ width: 100%;
+ background: inherit;
+}
+header ul li ul li a{
+ padding: 8px;
+ padding-left: 50px;
+ font-size: 12px;
+}
+header .menu-toggle{
+ display: block;
+ position: absolute;
+ right: 20px;
+ margin-top: 30px;
+ font-size: 1.9em;
+}
+header .search-container {
+  float: left;
+}
+
+header input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 10px;
+  border: none;
+}
+header .search-container button:hover {
+  background: green;
+}
+header .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-left: 0px;
+  background: #ddd;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+.bod{	
+  background-color: #f9f9f9;
+  color: black;
+  margin-left: 16%;
+  margin-right: 12%;
+  padding: 10px;
+  padding-top: 5%;
+}
+div.gallery {
+  margin-left: 18%;
+  margin-right: 50px;
+  
+  display: inline-block;
+  border: 1px solid #ccc;
+  float: left;
+  width: 30%;
+  
+  justify-content: centre; 
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+}
+ div.desc {
+  display: inline-block;
+  width: 100%;
+  font-size: 15px; 
+  text-align: center;
+}
+	
+}
